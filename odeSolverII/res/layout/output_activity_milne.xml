@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_graph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/ColorWhite"
+    >
+
+
+    <TextView 
+        android:id="@+id/finalAnswerMilne"
+        android:text="@string/answer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/Green"
+        />
+        <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/finalAnswerMilne"
+        	android:layout_marginLeft="5dp"
+        >
+            <TextView
+            android:id="@+id/new_outputMilne"
+            android:text="@string/new_output"
+        	android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            
+             />
+</ScrollView>
+            
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_outputMilne"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                >
+ 
+                
+				<Button
+                    android:id="@+id/Button_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save" 
+                    android:onClick="onSave"
+                    />
+                
+                
+                <Button
+                    android:id="@+id/Button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:onClick="onCancel"
+                     />
+
+                
+            </TableRow>
+</RelativeLayout>

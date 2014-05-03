@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_graph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/ColorWhite"
+    >
+
+    <LinearLayout         
+        android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="250dip"
+   android:layout_marginRight="5dp"
+   android:layout_marginLeft="5dp"
+       android:background="@color/ColorWhite"
+   
+   android:id="@+id/graph1" />
+    <TextView 
+        android:id="@+id/finalAnswer"
+        android:text="@string/answer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/graph1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/Green"
+        />
+        <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/finalAnswer"
+        	android:layout_marginLeft="5dp"
+        >
+            <TextView
+            android:id="@+id/new_output"
+            android:text="@string/new_output"
+        	android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            
+             />
+</ScrollView>
+            
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_output"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                >
+ 
+                
+				<Button
+                    android:id="@+id/Button_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save" 
+                    android:onClick="onSave"
+                    />
+                
+                
+                <Button
+                    android:id="@+id/Button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:onClick="onCancel"
+                     />
+
+                
+            </TableRow>
+</RelativeLayout>

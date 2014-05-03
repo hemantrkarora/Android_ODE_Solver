@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+<Button 
+    android:id="@+id/single_equation"
+    android:text="@string/single_equation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:onClick="onSingleEquationClicked"
+    />
+<Button 
+    android:id="@+id/system_of_equations"
+    android:text="@string/system_of_equations"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@id/single_equation"
+    android:onClick="onSystemEquationClicked"
+    />
+   
+</RelativeLayout>
